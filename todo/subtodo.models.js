@@ -18,6 +18,7 @@ const SubTodoSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Todo",
     }
-});
+}, {timestamps: true}
+);
 
 export const SubTodo = mongoose.model("SubTodo", SubTodoSchema);
