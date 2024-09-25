@@ -21,7 +21,11 @@ const DoctorSchema = new mongoose.Schema(
         worksInHospitals: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Hospital",
-        }
+        },
+        specialization: {
+            type: String,
+            required: true,
+        },
     }, {timestamps: true}
 );
 
